@@ -1,10 +1,10 @@
 import { defineStore } from 'pinia'
-import { reactive, ref } from 'vue'
+import { ref } from 'vue'
 
 export const useListStore = defineStore('list', () => {
-  const items = reactive([])
+  const items = ref([])
 
-  const finishedItems = reactive([])
+  const finishedItems = ref([])
 
   const currentItem = ref('')
 
@@ -16,4 +16,8 @@ export const useListStore = defineStore('list', () => {
     currentItem,
     id,
   }
+}, {
+  persist: {
+    key: 'pomodoro-list',
+  },
 })
