@@ -1,0 +1,1 @@
+import{j as n,r as m,c as i}from"./index-C6fevlkM.js";const d=n("settings",()=>{const e=[{id:1,name:"鬧鐘",file:new URL("/assets/alarm-BgEXsNyQ.mp3",import.meta.url).href},{id:2,name:"yay",file:new URL("/assets/yay-BvpvSbeL.mp3",import.meta.url).href}],t=m(1),s=i(()=>{const r=e.findIndex(a=>a.id===t.value);return e[r]});return{alarms:e,selected:t,selectedAlarm:s}});export{d as u};
