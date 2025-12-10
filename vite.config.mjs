@@ -13,6 +13,7 @@ import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/',
   // 設定 npm run dev 也能測試 PWA
   devOptions: {
     enabled: true,
